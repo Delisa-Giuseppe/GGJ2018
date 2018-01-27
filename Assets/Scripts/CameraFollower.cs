@@ -4,25 +4,39 @@ using UnityEngine;
 
 public class CameraFollower : MonoBehaviour {
 
+	public	float			Smoothness					= 2.5f;
+
 	[ SerializeField ]
 	private	Transform		m_Target					= null;
 
 	[ SerializeField ]
 	private	Vector3			m_Offset					= Vector3.zero;
 
-	Vector3 startRotation = Vector3.zero;
-
-	private void Start()
-	{
-		startRotation = ( m_Target.position - transform.position );
-	}
-
 	// Update is called once per frame
-	void Update ()
+	void LateUpdate ()
 	{
-		transform.position = Vector3.Lerp( transform.position, m_Target.transform.position, Time.deltaTime * 8f );
-		transform.position += transform.TransformDirection( m_Offset );
+		if ( m_Target == null )
+			return;
 
+		if ( Smoothness < 0.0f )
+			Smoothness = 0f;
+		
+		// Position
+		transform.position = Vector3.Lerp
+		(
+			transform.position,
+			m_Target.TransformPoint( m_Offset ),
+			Time.deltaTime * Smoothness
+		);
+
+		// Rotation
+		transform.rotation = Quaternion.Slerp
+		(
+			transform.rotation,
+			Quaternion.LookRotation( m_Target.position - transform.position , m_Target.up ),
+			Time.deltaTime * Smoothness
+		);
 
 	}
+
 }

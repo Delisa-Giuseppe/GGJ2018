@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-	public	float	speed = 1f;
-	public	float	traslation = 50f;
-	public	float	accelleration = 1f;
-	public	float	decelleration = 1f;
+	[ SerializeField ]
+	public	float	m_Speed = 1f;
+	[ SerializeField ]
+	public	float	m_Traslation = 50f;
+	[ SerializeField ]
+	public	float	m_Accelleration = 1f;
+	[ SerializeField ]
+	public	float	m_Decelleration = 1f;
 
-	private	float	lerpedTraslation = 0f;
+
+	private	float	m_LerpedTraslation = 0f;
 
 
 	// Update is called once per frame
@@ -18,36 +23,36 @@ public class Player : MonoBehaviour {
 		float currentTraslation = 0f;
 		if ( Input.GetKey( KeyCode.A ) )
 		{
-			currentTraslation = traslation;
+			currentTraslation = m_Traslation;
 		}
 
 		if ( Input.GetKey( KeyCode.D ) )
 		{
-			currentTraslation = -traslation;
+			currentTraslation = -m_Traslation;
 		}
 
 
-		lerpedTraslation = Mathf.Lerp
+		m_LerpedTraslation = Mathf.Lerp
 		( 
-			lerpedTraslation, 
+			m_LerpedTraslation, 
 			currentTraslation,  
-			( currentTraslation != 0f ? accelleration : decelleration ) * Time.deltaTime
+			( currentTraslation != 0f ? m_Accelleration : m_Decelleration ) * Time.deltaTime
 		);
 
 
 		RaycastHit hit;
 		if( Physics.Raycast( transform.position, -transform.up, out hit ) == false )
 		{
-			print( "Porca madonna" );
+			print( "Player::Update:Player cannot retrieve normals from foots !!" );
 			return;
 		}
 
 		// rotate around cylinder center
 		Vector3 centerPoint = hit.point - ( hit.normal * 1.5f );
-		transform.RotateAround( centerPoint, transform.forward, lerpedTraslation * Time.deltaTime );
+		transform.RotateAround( centerPoint, transform.forward, m_LerpedTraslation * Time.deltaTime );
 
 		// Move forward
-		transform.position += transform.forward * ( Time.deltaTime * speed );
+		transform.position += transform.forward * ( Time.deltaTime * m_Speed );
 
 	}
 }
