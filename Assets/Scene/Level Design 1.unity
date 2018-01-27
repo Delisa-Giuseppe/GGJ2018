@@ -1837,6 +1837,11 @@ Prefab:
       propertyPath: m_Offset.z
       value: -0.08
       objectReference: {fileID: 0}
+    - target: {fileID: 20860424965042264, guid: dde17e9c079617d409ff4931da33cc81,
+        type: 2}
+      propertyPath: m_Depth
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dde17e9c079617d409ff4931da33cc81, type: 2}
   m_IsPrefabParent: 0
