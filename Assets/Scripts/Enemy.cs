@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
     public float decreaseVelocity;
     public float speed;
 
+    protected bool playerTriggered;
+
     /*public float timerSpawn;
     public float enemyDistance;
     public float enemySpeed;
@@ -24,6 +26,19 @@ public class Enemy : MonoBehaviour
 
     public virtual void MoveEnemy()
     {
-        
+
     }
+
+    protected void OnTriggerEnter(Collider other)
+    {
+
+        print("Gesucristo");
+
+        if(other.tag == "Player" && !playerTriggered)
+        {
+            other.GetComponent<Player>().Score -= damn;
+            other.GetComponent<Player>().Speed -= decreaseVelocity;
+        }
+    }
+
 }

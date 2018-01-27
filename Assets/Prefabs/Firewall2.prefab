@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 33683540386281940}
   - component: {fileID: 23211713941931230}
   - component: {fileID: 95832397126672354}
+  - component: {fileID: 114930922598123608}
   m_Layer: 0
   m_Name: Firewall2
   m_TagString: Untagged
@@ -193,6 +194,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114930922598123608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1840028643684456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfdcfd667374f2fb071c361988eb7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damn: 0
+  decreaseVelocity: 0
+  speed: 0
 --- !u!198 &198271476123632982
 ParticleSystem:
   m_ObjectHideFlags: 1

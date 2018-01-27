@@ -26,6 +26,8 @@ public class VirusDinamic : Enemy
 
         pivot = hit.point - (hit.normal * 1.5f);
 
+        StartCoroutine(CheckDirection());
+
         //transform.RotateAround(pivot, transform.TransformDirection(direction), speed * Time.deltaTime);
 
     }
@@ -40,6 +42,10 @@ public class VirusDinamic : Enemy
 
         transform.RotateAround(pivot, transform.TransformDirection(direction), speed * Time.deltaTime);
 
+    }
+
+    IEnumerator CheckDirection()
+    {
         if (direction.z > 0)
         {
 
@@ -49,11 +55,6 @@ public class VirusDinamic : Enemy
             {
                 direction.z = -1;
             }
-                
-                
-            //transform.rotation = Quaternion.Euler(0, 0, Mathf.Clamp(transform.rotation.eulerAngles.z, 0, maxAngle));
-
-            //transform.RotateAround(pivot, transform.TransformDirection(direction), speed * Time.deltaTime);
         }
         else
         {
@@ -64,15 +65,11 @@ public class VirusDinamic : Enemy
                 direction.z = 1;
             }
         }
-        /*else
-        {
-            if (transform.rotation.eulerAngles.z > maxAngle)
-                transform.RotateAround(pivot, transform.TransformDirection(direction), speed * Time.deltaTime);
-            else if (transform.rotation.eulerAngles.z < maxAngle)
-                transform.RotateAround(pivot, transform.TransformDirection(-direction), speed * Time.deltaTime);
-        }*/
+
+        yield return new WaitForSeconds(0.5f);
 
 
+        StartCoroutine(CheckDirection());
 
     }
 	

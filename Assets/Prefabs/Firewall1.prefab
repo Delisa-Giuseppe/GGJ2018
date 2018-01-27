@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 33237674885848522}
   - component: {fileID: 23801195111945188}
   - component: {fileID: 95322884906994912}
+  - component: {fileID: 114627748410552370}
   m_Layer: 0
   m_Name: Firewall1
   m_TagString: Untagged
@@ -97,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1618279584312888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.87, y: 1.77, z: 3.719}
+  m_LocalPosition: {x: -0.5, y: 1.72, z: -972.2098}
   m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_Children:
   - {fileID: 4160361307677294}
@@ -162,6 +163,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114627748410552370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1618279584312888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfdcfd667374f2fb071c361988eb7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damn: 10
+  decreaseVelocity: 0.5
+  speed: 20
 --- !u!198 &198961166392430870
 ParticleSystem:
   m_ObjectHideFlags: 1
