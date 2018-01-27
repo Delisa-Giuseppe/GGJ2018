@@ -140,7 +140,7 @@ MonoBehaviour:
   enemyDistance: 10
   enemySpeed: 0
   numberEnemy: 100
-  enemyPrefab: {fileID: 1048081223940874, guid: c50916bae41f96247a60de31a3de1373,
+  enemyPrefab: {fileID: 1474075725788806, guid: 308931633247ebb4eb1f8c90456eee41,
     type: 2}
 --- !u!4 &241668318
 Transform:

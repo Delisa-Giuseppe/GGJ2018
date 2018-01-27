@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        transform.position -= transform.forward * (Time.deltaTime * Speed);
+        //transform.position -= transform.forward * (Time.deltaTime * Speed);
     }
 
     private void OnTriggerEnter(Collider other)
