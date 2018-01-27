@@ -253,7 +253,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1579470338702302}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.98402196, y: 3.084434, z: -993.61}
+  m_LocalPosition: {x: -0.91312975, y: 3.0880046, z: -973.44}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4477903172880302}
@@ -330,8 +330,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: 75f658a049d3b4c4993793c636bcb886, type: 2}
   m_StaticBatchInfo:
@@ -362,8 +362,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: e0e05a39d93e6ff44825984c5e6637a6, type: 2}
   m_StaticBatchInfo:
@@ -394,8 +394,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: bda0b864ddf1c6f44aef240bdd61d7e1, type: 2}
   m_StaticBatchInfo:
@@ -426,8 +426,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: bda0b864ddf1c6f44aef240bdd61d7e1, type: 2}
   m_StaticBatchInfo:
@@ -458,8 +458,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: 75f658a049d3b4c4993793c636bcb886, type: 2}
   m_StaticBatchInfo:
@@ -490,8 +490,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: e0e05a39d93e6ff44825984c5e6637a6, type: 2}
   m_StaticBatchInfo:
@@ -522,8 +522,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: de4a12132ac7e6047883ac4475738e14, type: 2}
   m_StaticBatchInfo:
@@ -554,8 +554,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: bda0b864ddf1c6f44aef240bdd61d7e1, type: 2}
   m_StaticBatchInfo:
@@ -586,8 +586,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: bda0b864ddf1c6f44aef240bdd61d7e1, type: 2}
   m_StaticBatchInfo:
