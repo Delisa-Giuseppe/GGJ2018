@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    public float timerSpawn;
+
+    public int damn;
+    public float decreaseVelocity;
+    public float speed;
+
+    /*public float timerSpawn;
     public float enemyDistance;
     public float enemySpeed;
     public int numberEnemy;
@@ -15,5 +20,10 @@ public abstract class Enemy : MonoBehaviour
     {
         player = GameObject.Find("Player");
         Spawn();
+    }*/
+
+    public virtual void MoveEnemy()
+    {
+        
     }
 }
