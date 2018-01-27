@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4337472348248526}
   - component: {fileID: 33864770150509178}
   - component: {fileID: 23731898324006888}
-  - component: {fileID: 95604294226615030}
   - component: {fileID: 136293176574291408}
   m_Layer: 0
   m_Name: cavo dritto
@@ -37,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1854179654554790}
   m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -999}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53,8 +52,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: dd55a1b84a0983e44867d931fa5e6e33, type: 2}
   - {fileID: 2100000, guid: 5d712c0c0a79e9c40bc7d19c71df9176, type: 2}
@@ -85,23 +84,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1854179654554790}
   m_Mesh: {fileID: 4300000, guid: 09ee46003089e904fa7178db5b842ad1, type: 3}
---- !u!95 &95604294226615030
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1854179654554790}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 09ee46003089e904fa7178db5b842ad1, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!136 &136293176574291408
 CapsuleCollider:
   m_ObjectHideFlags: 1
