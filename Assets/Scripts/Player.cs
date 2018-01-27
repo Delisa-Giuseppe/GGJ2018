@@ -70,7 +70,7 @@ public class Player : MonoBehaviour {
 		}
 
 		// rotate around cylinder center
-		Vector3 centerPoint = hit.point - ( hit.normal * 1.5f );
+		Vector3 centerPoint = hit.point - ( hit.normal * 1f );
 		transform.RotateAround( centerPoint, transform.forward, m_LerpedTraslation * Time.deltaTime );
 
 		// Move forward

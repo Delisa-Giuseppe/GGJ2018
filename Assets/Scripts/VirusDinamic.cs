@@ -24,7 +24,7 @@ public class VirusDinamic : Enemy
         Physics.Raycast(transform.position, -transform.up, out hit);
 
 
-        pivot = hit.point - (hit.normal * 1.5f);
+        pivot = hit.point - (hit.normal * 1f);
 
         StartCoroutine(CheckDirection());
 
