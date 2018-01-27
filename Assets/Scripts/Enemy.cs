@@ -29,15 +29,17 @@ public class Enemy : MonoBehaviour
 
     }
 
-    protected void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-
-        print("Gesucristo");
-
         if(other.tag == "Player" && !playerTriggered)
         {
-            other.GetComponent<Player>().Score -= damn;
-            other.GetComponent<Player>().Speed -= decreaseVelocity;
+            Player player = other.GetComponent<Player>();
+            player.Score -= damn;
+            player.Speed -= decreaseVelocity;
+            playerTriggered = true;
+
+
+            print(player.Score);
         }
     }
 

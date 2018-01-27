@@ -21,6 +21,8 @@ public class Player : MonoBehaviour {
 	[ SerializeField ]
 	public	float			m_Decelleration			= 1f;
 
+    public bool             inputEnabled            = true;
+
 	private	float			limitTime				= 0;
 	private	float			currentTime				= 0;
 	private	float			m_LerpedTraslation		= 0f;
@@ -42,12 +44,12 @@ public class Player : MonoBehaviour {
 		}
 
 		float currentTraslation = 0f;
-		if ( Input.GetKey( KeyCode.A ) )
+        if ( Input.GetKey( KeyCode.A ) && inputEnabled)
 		{
 			currentTraslation = m_Traslation;
 		}
 
-		if ( Input.GetKey( KeyCode.D ) )
+        if ( Input.GetKey( KeyCode.D ) && inputEnabled)
 		{
 			currentTraslation = -m_Traslation;
 		}
