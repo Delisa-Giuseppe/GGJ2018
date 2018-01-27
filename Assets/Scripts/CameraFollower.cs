@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CameraFollower : MonoBehaviour {
 
-	public	float			Smoothness					= 2.5f;
+	[Range(0.01f,1f)]
+	public	float			Smoothness					= 0.5f;
 
 	[ SerializeField ]
 	private	Transform		m_Target					= null;
@@ -26,7 +27,7 @@ public class CameraFollower : MonoBehaviour {
 		(
 			transform.position,
 			m_Target.TransformPoint( m_Offset ),
-			Time.deltaTime * Smoothness
+			Time.deltaTime * ( 20f * ( 0.9f - Smoothness ) )
 		);
 
 		// Rotation
@@ -34,7 +35,7 @@ public class CameraFollower : MonoBehaviour {
 		(
 			transform.rotation,
 			Quaternion.LookRotation( m_Target.position - transform.position , m_Target.up ),
-			Time.deltaTime * Smoothness
+			Time.deltaTime * ( 20f * ( 0.9f - Smoothness ) )
 		);
 
 	}
