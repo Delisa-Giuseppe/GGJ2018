@@ -7,40 +7,32 @@ public class UIManager : MonoBehaviour {
 
     private Text timeText;
     private Text scoreText;
-
-    private int score;
+    private Player player;
 
     void Awake()
     {
         timeText = transform.GetChild(0).transform.GetChild(0).GetComponent<Text>();   
-        scoreText = transform.GetChild(0).transform.GetChild(1).GetComponent<Text>();   
+        scoreText = transform.GetChild(0).transform.GetChild(1).GetComponent<Text>();
+        player = FindObjectOfType<Player>();
     }
 
     // Use this for initialization
     void Start () 
     {
 
-        score = 64000;
-        scoreText.text = "Score: "+score+" Byte";
+        scoreText.text = "Score: "+player.Score+" Byte";
 		
 	}
-	
-	// Update is called once per frame
-	void Update () 
+
+    private void Update()
+    {
+        SetScore();
+    }
+
+    public void SetScore()
     {
         
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            SetScore(Random.Range(-100, 101));
-        }
-
-	}
-
-    public void SetScore(int number)
-    {
-
-        score += number;
-        scoreText.text = "Score: " + score + " Byte";
+        scoreText.text = "Score: " + player.Score + " Byte";
 
     }
 
