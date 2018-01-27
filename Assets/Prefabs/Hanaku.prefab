@@ -103,6 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4209831290492688}
   - component: {fileID: 65149206910440272}
+  - component: {fileID: 114095228871997256}
   m_Layer: 0
   m_Name: Hanaku
   m_TagString: Untagged
@@ -431,3 +432,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4292369, y: 0.33460283, z: 0.26821396}
   m_Center: {x: 0.0073917313, y: -0.013112376, z: 0.0068103075}
+--- !u!114 &114095228871997256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1474075725788806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963d3bea506014573a32d2fe655c951a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damn: 0
+  decreaseVelocity: 0
+  speed: 100
