@@ -4285,61 +4285,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 1843738134466786, guid: 1e2911a08f087bc4c912bd5d29f65399, type: 2}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4547435538942304, guid: 1e2911a08f087bc4c912bd5d29f65399, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4547435538942304, guid: 1e2911a08f087bc4c912bd5d29f65399, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4547435538942304, guid: 1e2911a08f087bc4c912bd5d29f65399, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114754457789112760, guid: 1e2911a08f087bc4c912bd5d29f65399,
-        type: 2}
-      propertyPath: TempoLimite.x
-      value: 9999
-      objectReference: {fileID: 0}
-    - target: {fileID: 114754457789112760, guid: 1e2911a08f087bc4c912bd5d29f65399,
-        type: 2}
-      propertyPath: TempoLimite.y
-      value: 9999
-      objectReference: {fileID: 0}
-    - target: {fileID: 114754457789112760, guid: 1e2911a08f087bc4c912bd5d29f65399,
-        type: 2}
-      propertyPath: TempoLimite.z
-      value: 9999
-      objectReference: {fileID: 0}
-    - target: {fileID: 114754457789112760, guid: 1e2911a08f087bc4c912bd5d29f65399,
-        type: 2}
-      propertyPath: m_Accelleration
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114754457789112760, guid: 1e2911a08f087bc4c912bd5d29f65399,
-        type: 2}
-      propertyPath: Speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114754457789112760, guid: 1e2911a08f087bc4c912bd5d29f65399,
-        type: 2}
-      propertyPath: m_Traslation
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 65880283368594822, guid: 1e2911a08f087bc4c912bd5d29f65399,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843738134466786, guid: 1e2911a08f087bc4c912bd5d29f65399, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e2911a08f087bc4c912bd5d29f65399, type: 2}
   m_IsPrefabParent: 0
