@@ -57,6 +57,9 @@ GameObject:
   - component: {fileID: 23801195111945188}
   - component: {fileID: 95322884906994912}
   - component: {fileID: 114627748410552370}
+  - component: {fileID: 65717381352902750}
+  - component: {fileID: 65645392267123992}
+  - component: {fileID: 65981107132699200}
   m_Layer: 0
   m_Name: Firewall1
   m_TagString: Untagged
@@ -97,14 +100,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1618279584312888}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 1.72, z: -972.2098}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_LocalRotation: {x: -0, y: -0, z: -0.5886681, w: 0.8083749}
+  m_LocalPosition: {x: -0.8682382, y: 1.7687168, z: -985.5}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4160361307677294}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -72.125}
 --- !u!23 &23801195111945188
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -146,6 +149,42 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1618279584312888}
   m_Mesh: {fileID: 4300000, guid: 3d0dae84607434c4995621f051019368, type: 3}
+--- !u!65 &65645392267123992
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1618279584312888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3292045, y: 0.6358688, z: 0.44766575}
+  m_Center: {x: 0.5853977, y: 0.11656916, z: 0.43398014}
+--- !u!65 &65717381352902750
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1618279584312888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.64522094, y: 0.5452813, z: 0.44766575}
+  m_Center: {x: 0.422815, y: -0.47828496, z: 0.43398014}
+--- !u!65 &65981107132699200
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1618279584312888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.86955416, y: 1.5, z: 0.44766575}
+  m_Center: {x: -0.3342082, y: 0, z: 0.43398014}
 --- !u!95 &95322884906994912
 Animator:
   serializedVersion: 3
