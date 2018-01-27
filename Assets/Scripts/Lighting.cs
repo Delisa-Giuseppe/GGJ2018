@@ -13,11 +13,15 @@ public class Lighting : MonoBehaviour
         if(other.tag == "Player" && !playerTriggered)
         {
 
+            playerTriggered = true;
+
             Player player = other.GetComponent<Player>();
 
-            StartCoroutine(SetPlayerinput(player));
+            if(!player.immortal)
+            {
+                StartCoroutine(SetPlayerinput(player));
+            }
 
-            playerTriggered = true;
         }
     }
 

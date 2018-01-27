@@ -33,10 +33,15 @@ public class Enemy : MonoBehaviour
     {
         if(other.tag == "Player" && !playerTriggered)
         {
-            Player player = other.GetComponent<Player>();
-            player.Score -= damn;
-            player.Speed -= decreaseVelocity;
             playerTriggered = true;
+
+            Player player = other.GetComponent<Player>();
+
+            if(!player.immortal)
+            {
+                player.Score -= damn;
+                player.Speed -= decreaseVelocity;
+            }
 
         }
     }

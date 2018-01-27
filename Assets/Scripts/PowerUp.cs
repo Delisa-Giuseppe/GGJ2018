@@ -13,10 +13,11 @@ public class PowerUp : MonoBehaviour {
     }
 
     public PowerUpType powerUpType;
-    public bool playerTriggered;
-    public float validTime;
+    public int validTime;
     public float speedUp;
     public int scoreUp;
+
+    bool playerTriggered;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -37,34 +38,45 @@ public class PowerUp : MonoBehaviour {
                     StartCoroutine(ActiveScoreUp(player));
                 break;
             }
+
+            this.GetComponent<MeshRenderer>().enabled = false;
         }
     }
 
-    IEnumerator ActiveImmortality(Player player)
+    public IEnumerator ActiveImmortality(Player player)
     {
         player.immortal = true;
 
         yield return new WaitForSeconds(validTime);
 
         player.immortal = false;
+
+        Destroy(this.gameObject);
+
     }
 
-    IEnumerator ActiveSpeedUp(Player player)
+    public IEnumerator ActiveSpeedUp(Player player)
     {
         player.Speed += speedUp;
 
         yield return new WaitForSeconds(validTime);
 
         player.Speed -= speedUp;
+
+        Destroy(this.gameObject);
     }
 
-    IEnumerator ActiveScoreUp(Player player)
+    public IEnumerator ActiveScoreUp(Player player)
     {
 
         player.Score += scoreUp;
 
         yield return null;
 
+        Destroy(this.gameObject);
+
     }
+
+
 
 }
