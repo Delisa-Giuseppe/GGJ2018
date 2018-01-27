@@ -29,9 +29,12 @@ public class Player : MonoBehaviour {
 	private	float			currentTime				= 0;
 	private	float			m_LerpedTraslation		= 0f;
 
-	private void Start()
+	private IEnumerator Start()
 	{
+		float speed = Speed;
 		limitTime = ( ( TempoLimite.x * 3600f ) + ( TempoLimite.y * 60f ) + TempoLimite.z );
+		yield return new WaitForSecondsRealtime( 2f );
+		Speed = speed;
 	}
 
 	// Update is called once per frame
