@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
 
 	private	float	lerpedTraslation = 0f;
 
+
 	// Update is called once per frame
 	void Update ()
 	{
