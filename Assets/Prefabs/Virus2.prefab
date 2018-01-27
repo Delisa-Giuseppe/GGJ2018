@@ -88,8 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4343068476334732}
   - component: {fileID: 135459956988594820}
-  - component: {fileID: 114229401698690182}
-  - component: {fileID: 114159062290770228}
+  - component: {fileID: 114128226419710912}
   m_Layer: 0
   m_Name: Virus2
   m_TagString: Untagged
@@ -254,7 +253,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1579470338702302}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.91312975, y: 3.0880046, z: -946.3}
+  m_LocalPosition: {x: -0.98402196, y: 3.084434, z: -993.61}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4477903172880302}
@@ -672,7 +671,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1934644728935390}
   m_Mesh: {fileID: 4300018, guid: 115b3d22211b2df45a7618eeae2f783a, type: 3}
---- !u!114 &114159062290770228
+--- !u!114 &114128226419710912
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -683,21 +682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc2498e021c04ce4a8be32e50be448c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damn: 20
-  decreaseVelocity: 0.1
-  speed: 0
---- !u!114 &114229401698690182
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1579470338702302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b601bf0acc60a45b9e25b8fcc1d53b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damn: 0
+  damn: 32000
   decreaseVelocity: 0
   speed: 0
 --- !u!135 &135459956988594820
@@ -707,7 +692,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1579470338702302}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.16082403
