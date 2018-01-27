@@ -38,8 +38,6 @@ public class Enemy : MonoBehaviour
             player.Speed -= decreaseVelocity;
             playerTriggered = true;
 
-
-            print(player.Score);
         }
     }
 

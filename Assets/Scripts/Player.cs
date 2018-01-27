@@ -23,6 +23,8 @@ public class Player : MonoBehaviour {
 
     public bool             inputEnabled            = true;
 
+    public bool             immortal                = false;
+
 	private	float			limitTime				= 0;
 	private	float			currentTime				= 0;
 	private	float			m_LerpedTraslation		= 0f;
