@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 4209831290492688}
   - component: {fileID: 65149206910440272}
   m_Layer: 0
-  m_Name: Virus1
+  m_Name: Hanaku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -237,7 +237,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 6d8c7f59454ef394782fdd53ebf45348, type: 2}
+  - {fileID: 2100000, guid: bda0b864ddf1c6f44aef240bdd61d7e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -269,7 +269,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 6d8c7f59454ef394782fdd53ebf45348, type: 2}
+  - {fileID: 2100000, guid: bda0b864ddf1c6f44aef240bdd61d7e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -301,7 +301,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 6d8c7f59454ef394782fdd53ebf45348, type: 2}
+  - {fileID: 2100000, guid: bda0b864ddf1c6f44aef240bdd61d7e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -365,7 +365,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 6d8c7f59454ef394782fdd53ebf45348, type: 2}
+  - {fileID: 2100000, guid: bda0b864ddf1c6f44aef240bdd61d7e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
