@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
 	public	Vector3			TempoLimite				= Vector3.zero;
 	public	int				Score					= 65545;
 	public	float			CurrentTime				= 0;
+	public	Sprite[]		CountdownFrames			= null;
 
 	[ SerializeField ]
 	public	float			Speed					= 1f;
@@ -55,16 +56,23 @@ public class Player : MonoBehaviour {
 		float speed = Speed;
 		limitTime = ( ( TempoLimite.x * 3600f ) + ( TempoLimite.y * 60f ) + TempoLimite.z );
 
-		int	counter = 3;
-		while ( counter > 0 )
+		int	counter = 4;
+		UIManager.Instance.SetCountDownImage( CountdownFrames[ 4 - counter ] );
+
+		while ( counter > 1 )
 		{
 			// Show Counter
+			UIManager.Instance.SetCountDownImage( CountdownFrames[ 4 - counter ] );
 			print( "Game starts in " + counter-- );
 			yield return new WaitForSecondsRealtime( 1f );
 		}
 		
+		UIManager.Instance.SetCountDownImage( CountdownFrames[ 4 - counter ] );
 		Speed = speed;
 		m_IsReady = true;
+
+		yield return new WaitForSecondsRealtime( 1f );
+		UIManager.Instance.SetCountDownImage( null );
 	}
 
 

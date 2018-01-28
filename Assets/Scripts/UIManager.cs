@@ -5,14 +5,20 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 
-    private Text timeText;
-    private Text scoreText;
-    private Player player;
+	public	static	UIManager Instance = null;
+
+    private Text	timeText;
+    private Text	scoreText;
+	private	Image	countdownImage;
+    private Player	player;
 
     void Awake()
     {
-        timeText = transform.GetChild(0).transform.GetChild(0).GetComponent<Text>();   
-        scoreText = transform.GetChild(0).transform.GetChild(1).GetComponent<Text>();
+		Instance = this;
+
+		timeText		= transform.GetChild(0).transform.GetChild(0).GetComponent<Text>();   
+        scoreText		= transform.GetChild(0).transform.GetChild(1).GetComponent<Text>();
+		countdownImage	= transform.GetChild(0).transform.GetChild(2).GetComponent<Image>();
         player = FindObjectOfType<Player>();
     }
 
@@ -39,6 +45,18 @@ public class UIManager : MonoBehaviour {
         scoreText.text = "Score: " + player.Score + " Byte";
 
     }
+
+	public	void	SetCountDownImage( Sprite sprite )
+	{
+		countdownImage.enabled = true;
+		if ( sprite == null )
+		{
+			countdownImage.enabled = false;
+			return;
+		}
+
+		countdownImage.sprite = sprite;
+	}
 
 	public	void	TransformTime( float fTime, ref string Time )
 	{
