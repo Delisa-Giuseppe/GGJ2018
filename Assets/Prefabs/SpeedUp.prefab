@@ -567,7 +567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerUpType: 2
   validTime: 5
-  speedUp: 1.5
+  speedUp: 2
   scoreUp: 0
   particleEffect: {fileID: 1995293666025280, guid: 03243ef9f921bd44c860be5387018b66,
     type: 2}
