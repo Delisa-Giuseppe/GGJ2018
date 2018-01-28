@@ -56,23 +56,20 @@ public class Player : MonoBehaviour {
 		float speed = Speed;
 		limitTime = ( ( TempoLimite.x * 3600f ) + ( TempoLimite.y * 60f ) + TempoLimite.z );
 
-		int	counter = 4;
-		UIManager.Instance.SetCountDownImage( CountdownFrames[ 4 - counter ] );
+		int	counter = 3;
+		UIManager.Instance.SetCountDownImage( CountdownFrames[ 3 - counter ] );
 
-		while ( counter > 1 )
+		while ( counter > 0 )
 		{
 			// Show Counter
-			UIManager.Instance.SetCountDownImage( CountdownFrames[ 4 - counter ] );
-			print( "Game starts in " + counter-- );
+			UIManager.Instance.SetCountDownImage( CountdownFrames[ 3 - counter ] );
+			print( "Game starts in " + ( counter-- ) );
 			yield return new WaitForSecondsRealtime( 1f );
 		}
-		
-		UIManager.Instance.SetCountDownImage( CountdownFrames[ 4 - counter ] );
+		UIManager.Instance.SetCountDownImage( null );
+
 		Speed = speed;
 		m_IsReady = true;
-
-		yield return new WaitForSecondsRealtime( 1f );
-		UIManager.Instance.SetCountDownImage( null );
 	}
 
 

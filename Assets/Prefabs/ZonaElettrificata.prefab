@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33618177152373272}
   - component: {fileID: 23372171214280240}
   - component: {fileID: 114654400437976492}
+  - component: {fileID: 65405171010265494}
   m_Layer: 0
   m_Name: ZonaElettrificata
   m_TagString: Untagged
@@ -35,13 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1009569077706776}
-  m_LocalRotation: {x: 0.00000008146034, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.455, z: 1996.2799}
-  m_LocalScale: {x: 1.69, y: 1.067725, z: 2}
+  m_LocalRotation: {x: 0, y: 0, z: -0.026176924, w: 0.99965733}
+  m_LocalPosition: {x: 0.02, y: 0.461, z: -990}
+  m_LocalScale: {x: 1.67, y: 1.067725, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3}
 --- !u!23 &23372171214280240
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -55,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2d5c679e17e3c4f3bb8960a933573f1a, type: 2}
+  - {fileID: 2100000, guid: 8622dcff3270947ea910176e2cc7eedc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,6 +82,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1009569077706776}
   m_Mesh: {fileID: 4300000, guid: caec1d57ee81e490cb85aecd33cc45c0, type: 3}
+--- !u!65 &65405171010265494
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1009569077706776}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.039945, y: 0.52, z: 0.7764065}
+  m_Center: {x: -0.00000002980232, y: 0.26, z: 0.38820326}
 --- !u!114 &114654400437976492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,5 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damn: 0
-  decreaseVelocity: 0
+  decreaseVelocity: 2
   speed: 0
+  decreaseVelocityTime: 2
+  particleEffect: {fileID: 0}

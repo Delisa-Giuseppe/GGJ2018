@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52ab2b7e40b0a384399824e0406f2cdd, type: 3}
-  m_Name: Cutscene_Finale_Frame06
+  m_Name: Cutscene_Finale_Frame07
   m_EditorClassIdentifier: 
   Image: {fileID: 0}
   Duration: 0

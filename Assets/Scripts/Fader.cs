@@ -10,8 +10,6 @@ public class Fader : MonoBehaviour {
 	public	Image		m_FadeImage			= null;
 	public	float		m_TransitionTime	= 2f;
 
-
-
 	private	float		Interpolant			= 0f;
 	
 	private	bool		m_InOverride		= false;
@@ -28,6 +26,8 @@ public class Fader : MonoBehaviour {
 		}
 		Instance = this;
 		DontDestroyOnLoad( this );
+
+		m_FadeImage.raycastTarget = false;
 	}
 
 

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Cutscene_Start_Frame00
   m_EditorClassIdentifier: 
   Image: {fileID: 0}
-  Duration: 0
+  Duration: 2.01

@@ -4,48 +4,71 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-[ExecuteInEditMode]
 public class CameraMotionSequence : MonoBehaviour {
 
-	public	string	sceneToLoad = "";
+	public static CameraMotionSequence Instance = null;
+
+	public	string		sceneToLoad		= "";
+	public	Transform	Cube			= null;
+
+	public	Transform	cameraStartTransform = null;
+	public	Transform	cameraFinalTransform = null;
 
 	[System.Serializable]
-	public struct CameraMotion {
+	public struct CubeMotion
+	{
 		public	float		TransitionTime;
-		public	Transform	Destination;
+		public	Vector3		CubeDestination;
 	}
 
-	public	List<CameraMotion>	Transforms		= new List<CameraMotion>();
+	public	List<CubeMotion>	Transforms		= new List<CubeMotion>();
 
 
-	private	CameraMotion	currentFrame;
+	private	CubeMotion		currentFrame;
 	private	int				currentFrameIdx		= 0;
 	private new	Camera		camera				= null;
 
 	void Start()
 	{
+		Instance = this;
 		camera = Camera.main;
+	}
+
+
+	private IEnumerator CubeTransition()
+	{
+		Vector3 startCubeposition = Cube.position;
+		float	currentTime = 0f;
+		float	interpolant = 0f;
+		
+		while( interpolant < 1f )
+		{
+			currentTime += Time.deltaTime;
+			interpolant = currentTime / currentFrame.TransitionTime;
+			Cube.position = Vector3.Lerp( startCubeposition, currentFrame.CubeDestination, interpolant );
+			yield return null;
+		}
+
+		NextFrame();
 	}
 
 
 	private IEnumerator CameraTransition()
 	{
 		Vector3 startPosition		= camera.transform.position;
-		Quaternion startRotation	= camera.transform.rotation;
 
+		float	totalTime	= 0f;
+		foreach( var a in Transforms ) totalTime += a.TransitionTime;
 		float	currentTime = 0f;
 		float	interpolant = 0f;
 
 		while( interpolant < 1f )
 		{
 			currentTime += Time.deltaTime;
-			interpolant = currentTime / currentFrame.TransitionTime;
-			camera.transform.position = Vector3.Lerp ( startPosition, currentFrame.Destination.position, interpolant );
-			camera.transform.rotation = Quaternion.Lerp( startRotation, currentFrame.Destination.rotation, interpolant );
+			interpolant = currentTime / totalTime;
+			camera.transform.position = Vector3.Lerp ( cameraStartTransform.position, cameraFinalTransform.position, interpolant );
 			yield return null;
 		}
-
-		NextFrame();
 	}
 
 
