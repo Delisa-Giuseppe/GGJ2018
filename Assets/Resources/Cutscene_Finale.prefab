@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1597485490219968}
+  m_IsPrefabParent: 1
+--- !u!1 &1597485490219968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4053206821380318}
+  - component: {fileID: 114434318826608346}
+  m_Layer: 0
+  m_Name: Cutscene_Finale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4053206821380318
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1597485490219968}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07252169, y: -0.18539762, z: -995.08997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114434318826608346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1597485490219968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1257284ce4b584f4a87fa2c7651cc69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Frames:
+  - {fileID: 11400000, guid: 211bbbaeb7247f1429134a8b3d926d7f, type: 2}
+  - {fileID: 11400000, guid: 8682521df7da82341bb6855904d07c16, type: 2}
+  - {fileID: 11400000, guid: afd5c1256d75d0d408b85775bddb5f90, type: 2}
+  - {fileID: 11400000, guid: 859ef291fcc9e5c498609311ca86ae35, type: 2}
+  - {fileID: 11400000, guid: 59e05d8681684924cad6c4d29949331f, type: 2}
+  - {fileID: 11400000, guid: a9b446ed957d99d4db7dd4a0259df583, type: 2}
+  - {fileID: 11400000, guid: f733f4a8e088b7c48b9fefbd67b18514, type: 2}
+  - {fileID: 11400000, guid: 85c1aa9526b461848a87086eafe3ab32, type: 2}
+  m_OnSequnceFinished:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GameEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

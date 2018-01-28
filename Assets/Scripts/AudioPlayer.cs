@@ -19,6 +19,7 @@ public class AudioPlayer : MonoBehaviour {
 	{
 		if ( clip == null )return;
 
+		Player.Stop();
 		Player.Play();
 
 	}
