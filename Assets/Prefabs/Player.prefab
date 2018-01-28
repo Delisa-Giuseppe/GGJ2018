@@ -569,7 +569,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1c531cc7a78af45488d5dc72f79d0709, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.652
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -907,10 +907,9 @@ MonoBehaviour:
   Score: 65545
   CurrentTime: 0
   CountdownFrames:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 9cf38afd77503a0458d0cbadb0e9a25c, type: 3}
+  - {fileID: 21300000, guid: cf436ed69f8fd954e96ae4da2b6d4acd, type: 3}
+  - {fileID: 21300000, guid: 6613016bb8569a141a8f0dbbf3a97f5d, type: 3}
   Speed: 5
   m_Traslation: 360
   m_Accelleration: 5

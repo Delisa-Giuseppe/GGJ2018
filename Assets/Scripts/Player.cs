@@ -70,6 +70,7 @@ public class Player : MonoBehaviour {
 
 		Speed = speed;
 		m_IsReady = true;
+        GetComponent<AudioSource>().Play();
 	}
 
 

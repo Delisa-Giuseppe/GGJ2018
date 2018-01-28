@@ -54,6 +54,8 @@ public class Enemy : MonoBehaviour
                     StartCoroutine(DecreasePlayerVelocity(player));
                 }
                 player.Score -= damn;
+
+                //if(player.Score <= 0)
             }
 
             GetComponent<AudioSource>().PlayOneShot(clip, 1f);
