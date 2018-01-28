@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
     public int damn;
     public float decreaseVelocity;
     public float speed;
+    public GameObject particleEffect;
 
     protected bool playerTriggered;
 
@@ -33,6 +34,12 @@ public class Enemy : MonoBehaviour
     {
         if(other.tag == "Player" && !playerTriggered)
         {
+            if (particleEffect)
+            {
+                GameObject particle = Instantiate(particleEffect);
+                particle.transform.position = other.transform.position;
+            }
+
             playerTriggered = true;
 
             Player player = other.GetComponent<Player>();
@@ -50,5 +57,4 @@ public class Enemy : MonoBehaviour
 
         }
     }
-
 }
