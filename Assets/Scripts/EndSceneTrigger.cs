@@ -38,6 +38,8 @@ public class EndSceneTrigger : MonoBehaviour {
 
 	private void OnTriggerEnter( Collider other )
 	{
+        GetComponent<AudioSource>().Play();
+
 		if ( other.tag != "Player" )
 			return;
 
