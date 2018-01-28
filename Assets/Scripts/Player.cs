@@ -29,17 +29,32 @@ public class Player : MonoBehaviour {
 	private	float			currentTime				= 0;
 	private	float			m_LerpedTraslation		= 0f;
 
+	private	bool			m_IsReady				= false;
+
 	private IEnumerator Start()
 	{
 		float speed = Speed;
 		limitTime = ( ( TempoLimite.x * 3600f ) + ( TempoLimite.y * 60f ) + TempoLimite.z );
-		yield return new WaitForSecondsRealtime( 2f );
+
+		int	counter = 0;
+		while ( counter < 3 )
+		{
+			counter += 1;
+			// Show Counter
+			print( "Game starts in " + counter );
+			yield return new WaitForSecondsRealtime( 1f );
+		}
+		
 		Speed = speed;
+		m_IsReady = true;
 	}
+
 
 	// Update is called once per frame
 	void Update ()
 	{
+		if ( m_IsReady == false )
+			return;
 
 		if ( Time.time > limitTime )
 		{
