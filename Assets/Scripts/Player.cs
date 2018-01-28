@@ -9,7 +9,7 @@ public class Player : MonoBehaviour {
 	public static Player Instance = null;
 
 	[Header("Ore, minuti, secondi")]
-	public	Vector3			TempoLimite				= Vector3.zero;
+    public	Vector2			TempoLimite				= Vector2.zero;
 	public	int				Score					= 65545;
 	public	float			CurrentTime				= 0;
 	public	Sprite[]		CountdownFrames			= null;
@@ -54,7 +54,7 @@ public class Player : MonoBehaviour {
 		///////////////////////////////////////////////////////////////////////////
 
 		float speed = Speed;
-		limitTime = ( ( TempoLimite.x * 3600f ) + ( TempoLimite.y * 60f ) + TempoLimite.z );
+        CurrentTime = ( ( TempoLimite.x * 60f ) + TempoLimite.y );
 
 		int	counter = 3;
 		UIManager.Instance.SetCountDownImage( CountdownFrames[ 3 - counter ] );
@@ -79,9 +79,9 @@ public class Player : MonoBehaviour {
 		if ( m_IsReady == false )
 			return;
 
-		CurrentTime = Time.time;
+        CurrentTime -= Time.deltaTime;
 
-		if ( CurrentTime > limitTime )
+		if ( CurrentTime <= 0f )
 		{
 			print( "Hai perso !!!" );
 			enabled = false;
