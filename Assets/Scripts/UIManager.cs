@@ -30,7 +30,7 @@ public class UIManager : MonoBehaviour {
 		string CurrentTime = "";
 		TransformTime( player.CurrentTime, ref CurrentTime );
 
-		timeText.text = CurrentTime;
+        timeText.text = "Time: "+CurrentTime;
     }
 
     public void SetScore()

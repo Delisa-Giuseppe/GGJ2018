@@ -43,6 +43,11 @@ public class Enemy : MonoBehaviour
                 player.Speed -= decreaseVelocity;
             }
 
+            if(this.tag == "Virus")
+            {
+                Destroy(this.gameObject);
+            }
+
         }
     }
 
