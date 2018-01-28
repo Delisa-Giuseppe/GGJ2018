@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.29936957, g: 0.29936957, b: 0.29936957, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -2469,6 +2469,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114754457789112760, guid: 1e2911a08f087bc4c912bd5d29f65399,
+        type: 2}
+      propertyPath: CountdownFrames.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4547435538942304, guid: 1e2911a08f087bc4c912bd5d29f65399, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.55
@@ -2506,6 +2511,12 @@ Prefab:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114754457789112760, guid: 1e2911a08f087bc4c912bd5d29f65399,
+        type: 2}
+      propertyPath: CountdownFrames.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3eaf8ff5083f5d04a84ef7d55ed25b50,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e2911a08f087bc4c912bd5d29f65399, type: 2}
   m_IsPrefabParent: 0

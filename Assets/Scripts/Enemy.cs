@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -53,9 +54,14 @@ public class Enemy : MonoBehaviour
                 {
                     StartCoroutine(DecreasePlayerVelocity(player));
                 }
-                player.Score -= damn;
 
-                //if(player.Score <= 0)
+                float score = player.Score - damn;
+                if (score <= 0)
+                {
+                    SceneManager.LoadScene("GameOver");
+                }
+
+                player.Score -= damn;
             }
 
             GetComponent<AudioSource>().PlayOneShot(clip, 1f);

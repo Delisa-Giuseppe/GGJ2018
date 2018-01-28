@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -56,13 +55,13 @@ public class Player : MonoBehaviour {
 		float speed = Speed;
         CurrentTime = ( ( TempoLimite.x * 60f ) + TempoLimite.y );
 
-		int	counter = 3;
-		UIManager.Instance.SetCountDownImage( CountdownFrames[ 3 - counter ] );
+		int	counter = 4;
+		UIManager.Instance.SetCountDownImage( CountdownFrames[ 4 - counter ] );
 
 		while ( counter > 0 )
 		{
 			// Show Counter
-			UIManager.Instance.SetCountDownImage( CountdownFrames[ 3 - counter ] );
+			UIManager.Instance.SetCountDownImage( CountdownFrames[ 4 - counter ] );
 			print( "Game starts in " + ( counter-- ) );
 			yield return new WaitForSecondsRealtime( 1f );
 		}
@@ -84,9 +83,7 @@ public class Player : MonoBehaviour {
 
 		if ( CurrentTime <= 0f )
 		{
-			print( "Hai perso !!!" );
-			enabled = false;
-			return;
+            SceneManager.LoadScene("GameOver");
 		}
 
 		float currentTraslation = 0f;
