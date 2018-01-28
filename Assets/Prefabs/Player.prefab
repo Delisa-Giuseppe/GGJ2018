@@ -903,13 +903,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b19f4aa6acbc34409fb112dd67cc494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TempoLimite: {x: 9999, y: 9999, z: 9999}
+  TempoLimite: {x: 2, y: 0}
   Score: 65545
   CurrentTime: 0
   CountdownFrames:
   - {fileID: 21300000, guid: 9cf38afd77503a0458d0cbadb0e9a25c, type: 3}
   - {fileID: 21300000, guid: cf436ed69f8fd954e96ae4da2b6d4acd, type: 3}
   - {fileID: 21300000, guid: 6613016bb8569a141a8f0dbbf3a97f5d, type: 3}
+  - {fileID: 21300000, guid: 0a227f6cf6844c64a9101cec987d56a8, type: 3}
   Speed: 5
   m_Traslation: 360
   m_Accelleration: 5
