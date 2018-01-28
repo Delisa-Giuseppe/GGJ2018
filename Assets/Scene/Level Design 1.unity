@@ -4024,6 +4024,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1843738134466786, guid: 1e2911a08f087bc4c912bd5d29f65399, type: 2}
       propertyPath: m_Name
       value: Player
@@ -4084,6 +4085,8 @@ Prefab:
       propertyPath: m_Parameters.widthMultiplier
       value: 0.3
       objectReference: {fileID: 0}
+=======
+>>>>>>> e348760007b19b4ee5ffb39ea412875220cc5a5a
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e2911a08f087bc4c912bd5d29f65399, type: 2}
   m_IsPrefabParent: 0
