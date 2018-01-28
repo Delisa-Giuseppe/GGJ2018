@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class Enemy : MonoBehaviour
     public int damn;
     public float decreaseVelocity;
     public float speed;
+    public float decreaseVelocityTime;
     public GameObject particleEffect;
 
     protected bool playerTriggered;
@@ -46,8 +48,11 @@ public class Enemy : MonoBehaviour
 
             if(!player.immortal)
             {
+                if(decreaseVelocity > 0)
+                {
+                    StartCoroutine(DecreasePlayerVelocity(player));
+                }
                 player.Score -= damn;
-                player.Speed -= decreaseVelocity;
             }
 
             if(this.tag == "Virus")
@@ -56,5 +61,15 @@ public class Enemy : MonoBehaviour
             }
 
         }
+    }
+
+    IEnumerator DecreasePlayerVelocity(Player player)
+    {
+
+        player.Speed -= decreaseVelocity;
+
+        yield return new WaitForSeconds(decreaseVelocityTime);
+
+        player.Speed += decreaseVelocity;
     }
 }
