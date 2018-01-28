@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EndSceneTrigger : MonoBehaviour {
 
-	[ SerializeField ]
-	private	Player	m_Player	= null;
+	public	Player	m_Player	= null;
 
 	[ SerializeField ]
 	private	string	m_SceneName	= "";

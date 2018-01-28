@@ -7,7 +7,7 @@ public class Fader : MonoBehaviour {
 
 	public	static Fader Instance			= null;
 
-	public Image		m_FadeImage			= null;
+	public	Image		m_FadeImage			= null;
 	public	float		m_TransitionTime	= 2f;
 
 

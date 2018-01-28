@@ -27,6 +27,10 @@ public class UIManager : MonoBehaviour {
     private void Update()
     {
         SetScore();
+		string CurrentTime = "";
+		TransformTime( player.CurrentTime, ref CurrentTime );
+
+		timeText.text = CurrentTime;
     }
 
     public void SetScore()
@@ -35,6 +39,13 @@ public class UIManager : MonoBehaviour {
         scoreText.text = "Score: " + player.Score + " Byte";
 
     }
+
+	public	void	TransformTime( float fTime, ref string Time )
+	{
+		int iM = ( int ) ( ( fTime / 60f ) % 60f );
+		int iS = ( int ) ( fTime % 60f );
+		Time = iM.ToString( "00" ) + ":" + iS.ToString( "00" );
+	}
 
 
 }

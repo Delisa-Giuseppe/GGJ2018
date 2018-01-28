@@ -6,11 +6,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
+	public static Player Instance = null;
+
 	[Header("Ore, minuti, secondi")]
 	public	Vector3			TempoLimite				= Vector3.zero;
-	
-
 	public	int				Score					= 65545;
+	public	float			CurrentTime				= 0;
 
 	[ SerializeField ]
 	public	float			Speed					= 1f;
@@ -26,22 +27,39 @@ public class Player : MonoBehaviour {
     public bool             immortal                = false;
 
 	private	float			limitTime				= 0;
-	private	float			currentTime				= 0;
 	private	float			m_LerpedTraslation		= 0f;
 
 	private	bool			m_IsReady				= false;
 
+	private void Awake()
+	{
+		Instance = this;
+	}
+
 	private IEnumerator Start()
 	{
+		Fader fader						= FindObjectOfType<Fader>();
+		EndSceneTrigger endSceneTrigger = FindObjectOfType<EndSceneTrigger>();
+		if ( fader == null || endSceneTrigger == null )
+		{
+			print( "Player::You need to include \"Fader\" prefab and \"EndSceneTrigger\" prefabs in scene!!" );
+			print( "Remember to set references by dragging requeste objects in these components." );
+			enabled = false;
+			yield break;
+		}
+
+		endSceneTrigger.m_Player = this;
+
+		///////////////////////////////////////////////////////////////////////////
+
 		float speed = Speed;
 		limitTime = ( ( TempoLimite.x * 3600f ) + ( TempoLimite.y * 60f ) + TempoLimite.z );
 
-		int	counter = 0;
-		while ( counter < 3 )
+		int	counter = 3;
+		while ( counter > 0 )
 		{
-			counter += 1;
 			// Show Counter
-			print( "Game starts in " + counter );
+			print( "Game starts in " + counter-- );
 			yield return new WaitForSecondsRealtime( 1f );
 		}
 		
@@ -56,7 +74,9 @@ public class Player : MonoBehaviour {
 		if ( m_IsReady == false )
 			return;
 
-		if ( Time.time > limitTime )
+		CurrentTime = Time.time;
+
+		if ( CurrentTime > limitTime )
 		{
 			print( "Hai perso !!!" );
 			enabled = false;
