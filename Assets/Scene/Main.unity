@@ -1871,7 +1871,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4382056665861242, guid: 049a5010caadc6d4eb5833157ce7d945, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -977.45
+      value: -813
       objectReference: {fileID: 0}
     - target: {fileID: 4382056665861242, guid: 049a5010caadc6d4eb5833157ce7d945, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2469,11 +2469,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114754457789112760, guid: 1e2911a08f087bc4c912bd5d29f65399,
-        type: 2}
-      propertyPath: CountdownFrames.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4547435538942304, guid: 1e2911a08f087bc4c912bd5d29f65399, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.55
@@ -2506,17 +2501,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 82576948748929854, guid: 1e2911a08f087bc4c912bd5d29f65399,
+    - target: {fileID: 114754457789112760, guid: 1e2911a08f087bc4c912bd5d29f65399,
         type: 2}
-      propertyPath: m_PlayOnAwake
-      value: 0
+      propertyPath: TempoLimite.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114754457789112760, guid: 1e2911a08f087bc4c912bd5d29f65399,
         type: 2}
-      propertyPath: CountdownFrames.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: 3eaf8ff5083f5d04a84ef7d55ed25b50,
-        type: 3}
+      propertyPath: TempoLimite.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e2911a08f087bc4c912bd5d29f65399, type: 2}
   m_IsPrefabParent: 0
@@ -2668,7 +2662,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4136459375304700, guid: c49256399fc614c468a8df72dc54ecea, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.169
+      value: 1.3729
       objectReference: {fileID: 0}
     - target: {fileID: 4136459375304700, guid: c49256399fc614c468a8df72dc54ecea, type: 2}
       propertyPath: m_LocalPosition.z
