@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public GameObject particleEffect;
 
     protected bool playerTriggered;
+    public AudioClip clip;
 
     /*public float timerSpawn;
     public float enemyDistance;
@@ -50,9 +51,16 @@ public class Enemy : MonoBehaviour
                 player.Speed -= decreaseVelocity;
             }
 
-            if(this.tag == "Virus")
+            GetComponent<AudioSource>().PlayOneShot(clip, 1f);
+
+            foreach(var render in GetComponentsInChildren<MeshRenderer>())
             {
-                Destroy(this.gameObject);
+                render.enabled = false;
+            }
+
+            if (this.tag == "Virus")
+            {
+                Destroy(this.gameObject, 1f);
             }
 
         }

@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 4343068476334732}
   - component: {fileID: 135459956988594820}
   - component: {fileID: 114128226419710912}
+  - component: {fileID: 82049129109373838}
   m_Layer: 0
   m_Name: Virus2
   m_TagString: Virus
@@ -253,7 +254,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1579470338702302}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.09, y: 0.87, z: -973.44}
+  m_LocalPosition: {x: 0.09, y: 0.87, z: -960.73}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4477903172880302}
@@ -671,6 +672,86 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1934644728935390}
   m_Mesh: {fileID: 4300018, guid: 115b3d22211b2df45a7618eeae2f783a, type: 3}
+--- !u!82 &82049129109373838
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1579470338702302}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 32df3fbaa2afde248a774ff3e87673c5, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.3
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 2
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114128226419710912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -687,6 +768,7 @@ MonoBehaviour:
   speed: 0
   particleEffect: {fileID: 1854086353370114, guid: 1991ceee36842564db0c9a528d603a8b,
     type: 2}
+  clip: {fileID: 8300000, guid: 1c534c5f9edc91442b9a102fbb33f6d8, type: 3}
 --- !u!135 &135459956988594820
 SphereCollider:
   m_ObjectHideFlags: 1

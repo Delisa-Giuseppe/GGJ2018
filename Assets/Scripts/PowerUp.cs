@@ -17,6 +17,7 @@ public class PowerUp : MonoBehaviour {
     public float speedUp;
     public int scoreUp;
     public GameObject particleEffect;
+    public AudioClip clip;
 
     bool playerTriggered;
 
@@ -24,6 +25,8 @@ public class PowerUp : MonoBehaviour {
     {
         if(other.tag == "Player" && !playerTriggered)
         {
+            GetComponent<AudioSource>().PlayOneShot(clip, 1);
+
             if(particleEffect)
             {
                 GameObject particle = Instantiate(particleEffect);
