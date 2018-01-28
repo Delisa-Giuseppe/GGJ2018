@@ -16,6 +16,7 @@ public class PowerUp : MonoBehaviour {
     public int validTime;
     public float speedUp;
     public int scoreUp;
+    public GameObject particleEffect;
 
     bool playerTriggered;
 
@@ -23,6 +24,12 @@ public class PowerUp : MonoBehaviour {
     {
         if(other.tag == "Player" && !playerTriggered)
         {
+            if(particleEffect)
+            {
+                GameObject particle = Instantiate(particleEffect);
+                particle.transform.position = other.transform.position;
+            }                
+
             playerTriggered = true;
             Player player = other.GetComponent<Player>();
 
@@ -39,7 +46,7 @@ public class PowerUp : MonoBehaviour {
                 break;
             }
 
-            this.GetComponent<MeshRenderer>().enabled = false;
+            this.GetComponentInChildren<MeshRenderer>().enabled = false;
         }
     }
 

@@ -208,3 +208,5 @@ MonoBehaviour:
   validTime: 10
   speedUp: 0
   scoreUp: 0
+  particleEffect: {fileID: 1995293666025280, guid: 03243ef9f921bd44c860be5387018b66,
+    type: 2}
