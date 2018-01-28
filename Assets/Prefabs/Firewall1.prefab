@@ -101,8 +101,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1618279584312888}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.87, y: 1.77, z: 3.719}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -424.90002}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4160361307677294}
@@ -160,8 +160,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3292045, y: 0.6358688, z: 0.44766575}
-  m_Center: {x: 0.5853977, y: 0.11656916, z: 0.43398014}
+  m_Size: {x: 0.32920456, y: 0.49996996, z: 0.44766575}
+  m_Center: {x: 0.5853977, y: 0.048619747, z: 0.43398014}
 --- !u!65 &65717381352902750
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -184,8 +184,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.86955416, y: 1.5, z: 0.44766575}
-  m_Center: {x: -0.3342082, y: 0, z: 0.43398014}
+  m_Size: {x: 0.8200792, y: 1.5, z: 0.44766575}
+  m_Center: {x: -0.35894567, y: 0, z: 0.43398014}
 --- !u!82 &82139588413062500
 AudioSource:
   m_ObjectHideFlags: 1
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fdfdcfd667374f2fb071c361988eb7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damn: 10
+  damn: 1024
   decreaseVelocity: 0.5
   speed: 20
   decreaseVelocityTime: 2
@@ -360,7 +360,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 661597592
+  randomSeed: -1898338402
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3622,7 +3622,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1843363488
+  randomSeed: -563578465
   InitialModule:
     serializedVersion: 3
     enabled: 1

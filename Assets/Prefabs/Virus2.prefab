@@ -763,7 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc2498e021c04ce4a8be32e50be448c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damn: 32000
+  damn: 512
   decreaseVelocity: 0
   speed: 0
   decreaseVelocityTime: 0

@@ -597,7 +597,7 @@ MonoBehaviour:
   powerUpType: 1
   validTime: 0
   speedUp: 0
-  scoreUp: 1000
+  scoreUp: 2048
   particleEffect: {fileID: 1995293666025280, guid: 03243ef9f921bd44c860be5387018b66,
     type: 2}
   clip: {fileID: 8300000, guid: e5f693a3a6ab722469de14fdcdfbaf2c, type: 3}

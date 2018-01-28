@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 963d3bea506014573a32d2fe655c951a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damn: 16000
+  damn: 1024
   decreaseVelocity: 0
   speed: 80
   decreaseVelocityTime: 0
